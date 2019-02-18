@@ -8,6 +8,55 @@
   <link rel="stylesheet" href="theme.css" type="text/css">
   <link href="css/animate.min.css" rel="stylesheet">
   <title>OK DCC科技</title>
+  <style>
+    .down_d {
+      text-align: center !important;
+      text-align: -webkit-center !important;
+      margin-bottom: 20px;
+    }
+    .down_a{
+      color: black;
+      height: 38px;
+      width: 140px;
+      background-color: #fff;
+      text-align: left;
+      font-size: .8rem;
+      margin-bottom: 6px;
+      display: block;
+      border: 0px;
+    }
+    .down_a:nth-of-type(1):hover{
+      background-color:#29bec4;
+    }
+    .down_a:nth-of-type(2):hover{
+      background-color:#ff6445;
+    }
+    .down_a:nth-of-type(3):hover{
+      background-color:#ecc64b;
+    }
+    .down_a img {
+      height: 26px;
+      vertical-align: middle;
+    }
+    body{
+      position: relative;
+    }
+    .wechatbg{
+      display: none;    
+      position: fixed;
+      width: 100%;
+      z-index: 1300;
+      height: 500px;
+      background: #6d69698a;
+      top: 0px;
+    }
+    .wechatbg img{
+      position: absolute;
+      right: -20px;
+      top: 10px;
+      width: 60%;
+    }
+  </style>
   <!--百度统计代码-->
   <script>
     var _hmt = _hmt || [];
@@ -144,19 +193,24 @@
           <h3 style=""> <b>APP简介</b></h3>
           <p class="mb-3 wow fadeInRight">该APP适用于OK DCC无线数码控制器，APP通过蓝牙/WIFI与控制器进行连接。通过该APP您可以轻松管理、操控沙盘上的火车模型。&nbsp;<br>机车控制界面，可以上下滑动选择机车，每辆机车均有单独的F功能按钮、速度条控制、行驶方向控制，F功能按钮可以任意添加、删除、修改。&nbsp;<br>机车目录界面，可以对机车进行管理，包括添加、修改、删除机车等操作。&nbsp;<br>轨道控制界面，可以添加、修改、删除道岔，同时具有道岔组合的功能，可以将道岔进行任意组合联控。&nbsp;<br>CV操作界面，可以读取、修改机车地址，读取、修改任意CV值。<br>......<br>更多操作及功能请下载体验</p>
           <div class="row">
-			  <div class="col-md-6 wow fadeInLeft" style="text-align:center">
-				<a class="btn btn-success" style="" href="http://app.okdcc.com"><i class="fa fa-fw fa-android"></i>&nbsp;安卓下载 <i class="fa fa-download fa-fw"></i> </a>
-				<div>
-					<img style="width:60%" src="img/Androiddownloadqrcode.png">
-				</div>
-			  </div>
-			  <div class="col-md-6 wow fadeInRight" style="text-align:center">
-				<a class="btn btn-dark" href="https://www.apple.com/ios/app-store/"><i class="fa fa-fw fa-apple"></i>&nbsp;IOS下载 <i class="fa fa-download fa-fw"></i></a>
-				<div>
-					<img style="width:60%" src="img/IOSdownloadqrcode.png">
-				</div>
-			  </div>
-		  </div>
+            <div class="col-md-4 wow fadeInLeft" style="text-align:center">
+            <a class="btn btn-success" style="" href="#" id="officdownload"><i class="fa fa-fw fa-android"></i>&nbsp;官方下载 <i class="fa fa-download fa-fw"></i> </a>
+            <div>
+              <img style="width:90%" src="img/Androiddownloadqrcode.png">
+            </div>
+            </div>
+            <div class="col-md-4 wow fadeInLeft down_d" style="text-align:center">
+                <a class="btn btn-success down_a"  href="http://app.okdcc.com" ><img src="./img/hwstore.png"  >&nbsp;华为应用市场 </a>
+                <a class="btn btn-success down_a"  href="http://app.okdcc.com"><img src="./img/xmstore.png" >&nbsp;小米应用市场 </a>
+                <a class="btn btn-success down_a" href="http://app.okdcc.com"><img src="./img/yyhstore.png" >&nbsp;应用汇</a>
+            </div>
+            <div class="col-md-4 wow fadeInRight" style="text-align:center">
+            <a class="btn btn-dark" href="https://www.apple.com/ios/app-store/"><i class="fa fa-fw fa-apple"></i>&nbsp;IOS下载 <i class="fa fa-download fa-fw"></i></a>
+            <div>
+              <img style="width:90%" src="img/IOSdownloadqrcode.png">
+            </div>
+          </div>
+        </div>
         </div>
         <div class="col-md-4">
           <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
@@ -273,6 +327,9 @@
   <p class="no_style footer_title to_center" style="text-align:center">
 	<a href="http://www.okdcc.com/" style="font-size:.8rem;color:#7a888799">©2016-2019 OKDCC</a>
   </p>
+  <div class="wechatbg">
+    <img src="./img/wechatbg.png"/>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -280,6 +337,29 @@
   <script src="js/jquery.js"></script>
   <script src="js/my.js"></script>
   <script src="js/wow.min.js"></script>
+  <script>
+    $(function() {
+      $(".wechatbg").height($(window).height())
+    })
+    
+    $("#officdownload").on('click',function() {
+      var ua = navigator.userAgent.toLowerCase();
+    　　var isWeixin = ua.indexOf('micromessenger') != -1;
+    　　if (isWeixin) {
+      　　 $(".wechatbg").css({
+            'display':'block'
+          })
+    　　}else{
+      window.location.href="http://www.appchina.com/app/com.okdcc.dongcheapp"
+      　　 return false;      
+    　　}
+    })
+    $(".wechatbg").on('click',function(){
+      $(".wechatbg").css({
+        'display':'none'
+      })
+    })
+  </script>
 </body>
 
 </html>
