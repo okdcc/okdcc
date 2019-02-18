@@ -49,6 +49,7 @@
       z-index: 1300;
       height: 500px;
       background: #6d6969d1;
+      background-color:#6d6969d1; 
       top: 0px;
     }
     .wechatbg img{
@@ -344,6 +345,7 @@
     })
     
     $("#officdownload").on('click',function() {
+          console.log('kkk')
       var ua = navigator.userAgent.toLowerCase();
     　　var isWeixin = ua.indexOf('micromessenger') != -1;
     　　if (isWeixin) {
@@ -351,7 +353,7 @@
             'display':'block'
           })
     　　}else{
-      window.location.href="http://www.appchina.com/app/com.okdcc.dongcheapp"
+           window.location.href="http://www.appchina.com/app/com.okdcc.dongcheapp"
       　　 return false;      
     　　}
     })
